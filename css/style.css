@@ -29,7 +29,7 @@ section {
   position: relative;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   color: white;
 }
