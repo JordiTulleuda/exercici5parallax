@@ -1,5 +1,3 @@
-
-/* Comencem resetejant els valors del navegador */
 *,
 *::before,
 *::after {
@@ -72,7 +70,6 @@ section h1 {
   background-size: cover;
 }
 
-/* A partir d'aquí és el codi per al menú fixat a la part superior */
 header {
   font-family: Arial, sans-serif;
   position: fixed;
@@ -97,7 +94,6 @@ nav {
   max-width: 1200px;
   margin: auto;
 }
-
 
 nav h1 {
   font-size: 32px;
@@ -127,7 +123,6 @@ nav li a:hover {
   color: rgb(0, 221, 81);
 }
 
-/*TAULA*/
 .taula-contenidor {
   display: grid;
   justify-items: center;
