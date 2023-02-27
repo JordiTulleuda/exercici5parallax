@@ -1,13 +1,27 @@
-html{
-	background-image: url("https://img.freepik.com/vector-gratis/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg?w=1060&t=st=1677096632~exp=1677097232~hmac=c054cbda0118ea1570981c421763aaa9d50d56a898b2927ad8b9847e1f4436a0");
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
 }
-nav {
+
+.caixa1 {
+	float: left;
+	width: 500px;
+	height: 500px;
+	padding: 10px 12px 14px 16px;
+	margin: 30px;
+  }
+  .caixa2 {
+	float: left;
+	background-color: #E5E5E5;
+	width: 500px;
+	height: 500px;
+	padding: 10px 12px 14px 16px;
+	margin: 45px;
+  }
+  
+  nav {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,83 +29,43 @@ nav {
 	background-color: #333;
 	color: #fff;
 	padding: 10px;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	z-index: 100;
 }
 nav ul {
-	list-style: none;
 	margin: 0;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding: 0;
+	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	float: left;
+}
+nav ul li {
+	margin: 0 10px;
 }
 nav a {
 	color: #fff;
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 24px;
-	transition: all 0.3s ease;
-}
-nav a:hover {
-	color: #06a7ae;
-}
-.subMenu {
-	display: none;
-	position: absolute;
-	text-decoration: none;
-}
-nav > ul:hover .subMenu {
-	top: 60px;
-	display: block;
-	background-color: #333;
 }
 
-table {
-	border-collapse: collapse;
-	width: 100%;
-	margin-top: 50px;
+.parallax {
+	background-image: url('https://i.blogs.es/96c5ad/pan_tomate/1366_2000.jpeg');
+	height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
-th, td {
-	padding: 10px;
-	text-align: center;
-}
-th {
-	background-color: #333;
+.parallax-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: #fff;
-}
-td {
-	border: 1px solid #ddd;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h1 {
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 70px;
 	text-align: center;
-	color: #06a7ae;
-}
-p{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 25px;
-	color: #2a026e;
-}
-.parag{
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	width: 80%;
-	padding: 70px;
-}
-footer{
-	background-color: teal;
-	text-align: center;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 25px;
-	color: white;
-	padding: 10px;
-	width: 100%;
-	height: auto;
-	margin: 0px;
-	left: 0px;
-	bottom: 0px;
+	font-size: 3rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
