@@ -63,9 +63,7 @@ body {
   
   nav li:hover>ul{
 	display:block;
-  }
-  
-  
+  }  
 
 .parallax {
 	background-image: url('https://i.blogs.es/96c5ad/pan_tomate/1366_2000.jpeg');
