@@ -78,7 +78,7 @@ header {
   right: 0;
   height: 70px;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000; /*valor alt per donar preferencia*/
+  z-index: 1000;
 }
 
 nav {
@@ -116,7 +116,7 @@ nav li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 19px;
-  text-transform: uppercase; /*posar text en maj*/
+  text-transform: uppercase;
 }
 
 nav li a:hover {
