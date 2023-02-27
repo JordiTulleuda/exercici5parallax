@@ -1,237 +1,99 @@
-.body
-{
-  background-color: #434343;
+/* CSS per al menú fixat */
+html{
+	background-image: url("https://img.freepik.com/vector-gratis/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg?w=1060&t=st=1677096632~exp=1677097232~hmac=c054cbda0118ea1570981c421763aaa9d50d56a898b2927ad8b9847e1f4436a0");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
-
-.nav
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #000;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  z-index: 9999;
-}
-ul, ol
-{
-list-style: none;
-}
-
-.nav li a
-{
-background-color: #000;
-color: #fff;
-text-decoration: none;
-padding: 10px 15px;
-display: block;
-}
-.nav li a:hover
-{
-background-color: #434343;
-}
-
-.nav > li
-{
-float: left;
-}
-
-.nav li ul
-{
-display: none;
-position: absolute;
-min-width: 140px;
-}
-
-.nav li:hover > ul
-{
-display: block;
-}
-
-.nav li ul li
-{
-position: relative;
-}
-
-.nav li ul li ul
-{
-right: -140px;
-top: 0px;
-}
-
-
-
-
-main
-{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-}
-
-section
-{
-    transform-style:preserve-3d;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:blueviolet; 
-}
-
-section h1
-{
-    text-align: center;
-    font-size: 4rem;
-    font-family: sans-serif;
-}
-
-.no-parallax
-{
-    background-color: rgb(56, 56, 56);
-    z-index: 999;
-
-}
-
-.parallax h1
-{
-    width: 60%;
-    font-size: 2rem;
-}
-
-.parallax::after
-{
-    content:"";
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom:0;
-    right: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.image-section
-{
-  background-color: rgb(56, 56, 56);
-    z-index: 999;
-}
-
-.bg::after
-{
-    background: linear-gradient(rgba(0,0,0.5),rgba(0,0,0,.5)), url("https://www.institutoorl-iom.com/wp-content/uploads/2016/02/los-oidos-concierto.jpg");
-    background-size: cover;
-}
-
-
-
-
-.header
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	background: linear-gradient(#b7328d, #ac18c0);
-}
-
-.container
-{
-	border: solid 1px rgba(255, 255, 255, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-table
-{
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
 	color: #fff;
-	font-size: 14px;
-	table-layout: fixed;
+	padding: 10px;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	float: left;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 24px;
+	transition: all 0.3s ease;
+}
+nav a:hover {
+	color: #06a7ae;
+}
+.subMenu {
+	display: none;
+	position: absolute;
+	text-decoration: none;
+}
+nav > ul:hover .subMenu {
+	top: 60px;
+	display: block;
+	background-color: #333;
+}
+
+/* CSS per a la taula */
+table {
 	border-collapse: collapse;
+	width: 100%;
+	margin-top: 50px;
 }
-
-thead
-{
-	background: rgba(243, 140, 210, 0.4);
+th, td {
+	padding: 10px;
+	text-align: center;
 }
-
-th
-{
-	padding: 20px 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-  text-align: center; 
+th {
+	background-color: #333;
+	color: #fff;
 }
-
-td
-{
-	padding: 15px;
-	border-bottom: solid 1px rgba(255, 255, 255, 0.2);
-  text-align: center;
+td {
+	border: 1px solid #ddd;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-tbody tr
-{
-	cursor: pointer;
+h1 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 70px;
+	text-align: center;
+	color: #06a7ae;
 }
-
-tbody tr:hover
-{
-	background: rgba(243, 103, 199, 0.4);
+p{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 25px;
+	color: #2a026e;
 }
-
-
-
-
-  .image-wrapper {
-    display: flex;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 50%;
-    margin-right: 20px;
-  }
-  
-  .image-container:last-child {
-    margin-right: 0;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  .image-container:hover .overlay {
-    height: 100%;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+.parag{
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 80%;
+	padding: 70px;
+}
+footer{
+	background-color: teal;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 25px;
+	color: white;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	left: 0px;
+	bottom: 0px;
+}
