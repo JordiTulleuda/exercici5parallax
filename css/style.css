@@ -144,6 +144,7 @@ th, td {
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgb(110, 110, 110);
+  color: white;
 }
 
 th {
