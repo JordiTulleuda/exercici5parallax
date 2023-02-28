@@ -72,7 +72,7 @@ header {
   left: 0;
   right: 0;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.76);
   z-index: 1000;
 }
 
@@ -115,7 +115,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: rgb(0, 221, 81);
+  color: rgb(110, 110, 110);
 }
 
 .taula-contenidor {
